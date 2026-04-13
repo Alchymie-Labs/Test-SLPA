@@ -148,6 +148,11 @@
             <artifactId>spring-boot-starter-websocket-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-resolver-dns-native-macos</artifactId>
+            <classifier>osx-aarch_64</classifier>
+        </dependency>
     </dependencies>
 
     <build>
@@ -198,7 +203,7 @@
                             </annotationProcessorPaths>
                         </configuration>
                     </execution>
-                </executions>
+                </executions><configuration><source>16</source><target>16</target></configuration>
             </plugin>
         </plugins>
     </build>
